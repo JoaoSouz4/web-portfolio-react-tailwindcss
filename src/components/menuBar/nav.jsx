@@ -2,23 +2,23 @@ export default function Nav(){
     return(
         <nav> 
             <ul className = 'flex gap-4'>
-                <li className = 'text-light'>
+                <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
                     Home
                 </li>
 
-                <li className = 'text-light'>
+                <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
                     Quem sou
                 </li>
 
-                <li className = 'text-light'>
+                <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
                     Stacks
                 </li>
 
-                <li className = 'text-light'>
+                <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
                     Projetos
                 </li>
 
-                <li className = 'text-light'>
+                <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
                     Fale comigo
                 </li>
             </ul>
