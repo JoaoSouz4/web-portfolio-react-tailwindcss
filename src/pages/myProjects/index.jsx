@@ -14,7 +14,10 @@ export default function MyProjects(){
                                 <Card.Image img = {project.img} />
                                 <Card.Title title={project.title} />
                                 <Card.Description text = {project.description} />
-                                <Card.Stacks listStacks={project.stacks} />
+                                <Card.Stacks 
+                                    listFrontEnd={project.stacks.frontEnd} 
+                                    listBackEnd={project.stacks.backEnd}
+                                />
                                 <Card.Actions>
                                     <Card.Action
                                         style = 'leaked'

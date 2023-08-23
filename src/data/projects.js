@@ -12,7 +12,10 @@ const projects = [
             gitHub: '',
             app: '',
         },
-        stacks: ['React', 'javaScript', 'TypeScript', 'MongoDB', 'NodeJs', 'Styled-Components', 'Express']
+        stacks: {
+            frontEnd: ['react', 'vite', 'styledcomponents'],
+            backEnd: ['node', 'mongodb', 'express'],
+        }
     },
     {
 
@@ -25,7 +28,10 @@ const projects = [
             gitHub: '',
             app: '',
         },
-        stacks: ['React', 'Electron', 'Tailwindcss', 'NodeJs', 'Express', 'MongoDB']
+        stacks: {
+            frontEnd: ['react', 'vite', 'electron', 'tailwind'],
+            backEnd: ['node', 'express', 'mongodb'],
+        }
     }
 
 ]
