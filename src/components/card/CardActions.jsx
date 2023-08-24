@@ -1,5 +1,7 @@
 export function CardActions({children}){
     return(
-        <div>{children}</div>
+        <div className = ' w-full flex justify-around mt-6'>
+            {children}
+        </div>
     )
 }

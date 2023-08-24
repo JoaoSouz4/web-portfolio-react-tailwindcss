@@ -1,5 +1,4 @@
-import {AiFillLinkedin} from 'react-icons/ai';
-import {AiFillInstagram} from 'react-icons/ai';
+import {AiFillInstagram, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 
 export default function SocialMedias(){
     return(
@@ -11,6 +10,10 @@ export default function SocialMedias(){
 
                 <div className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
                     <AiFillLinkedin className = 'text-3xl'/>
+                </div>
+
+                <div className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
+                    <AiFillGithub className = 'text-3xl'/>
                 </div>
             </div>
         </div>

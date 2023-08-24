@@ -2,10 +2,14 @@ import Card from "../../components/card";
 import { CardTitle } from "../../components/card/CardTitle";
 import Section from "../../components/section";
 import projects from "../../data/projects";
+import {AiFillFire} from 'react-icons/ai';
 
 export default function MyProjects(){
     return(
-        <Section>
+        <Section 
+            title = 'Meus Projetos'
+            icon = {AiFillFire}
+        >
             <div className = 'flex gap-4 relative'>
                 {
                     projects.map( project => {
@@ -22,12 +26,19 @@ export default function MyProjects(){
                                     <Card.Action
                                         style = 'leaked'
                                         label = 'GitHub'
-                                        action = {() => {alert('clicked')}}
+                                        action = {() => window.open(project.url.gitHub, '_blank')}
                                     />
-                                    <Card.Action
-                                        label = 'Acesse'
-                                        action = {() => {alert('clicked')}}
-                                    />
+                                    { project.url.app ? 
+                                        <Card.Action
+                                            label = 'Acesse'
+                                            action = {() => window.open(project.url.app)}
+                                        />
+                                    :
+                                        <Card.Action
+                                            label={'Linkedin'}
+                                            action = {() => window.open(project.url.linkedin)}
+                                        />
+                                    }
                                 </Card.Actions>
                             </Card.Root>
                         )

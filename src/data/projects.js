@@ -9,8 +9,8 @@ const projects = [
         img: repositoriocriativo,
         url: {
             linkedin: '',
-            gitHub: '',
-            app: '',
+            gitHub: 'https://github.com/JoaoSouz4/frontend_rc',
+            app: 'https://repositoriocriativo.vercel.app/',
         },
         stacks: {
             frontEnd: ['react', 'vite', 'styledcomponents'],
@@ -21,11 +21,11 @@ const projects = [
 
         id: 1,
         title: "Screen Manager",
-        description: "Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informação a respeito de Displays de celulares, com o propósito de tornar o atendimento mais ágil.",
+        description: "Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informação sobre Displays de celulares.",
         img: screenmanager,
         url: {
-            linkedin: '',
-            gitHub: '',
+            linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7096593063929667584/',
+            gitHub: 'https://github.com/JoaoSouz4/ScreenManager-React-Electron',
             app: '',
         },
         stacks: {
