@@ -11,6 +11,7 @@ export default {
       'light': '#fafafa',
       'primary': '#30C8A8',
       'dark': '#1B2628',
+      'gray-dark': '#626262'
     }
   },
   plugins: [],
