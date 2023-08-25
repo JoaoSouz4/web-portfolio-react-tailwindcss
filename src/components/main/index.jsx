@@ -1,5 +1,6 @@
 import AboutMe from "../../pages/about";
 import Apresentation from "../../pages/apresentation";
+import Contact from "../../pages/contact";
 import MyProjects from "../../pages/myProjects";
 
 export default function Main(){
@@ -8,6 +9,7 @@ export default function Main(){
             <Apresentation />
             <AboutMe />
             <MyProjects />
+            <Contact />
         </main>
     )
 }
