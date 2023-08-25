@@ -8,6 +8,7 @@ export default {
     extend: {},
     colors: {
       'background': '#0B1619',
+      'backgroundhover': '#070E10',
       'light': '#fafafa',
       'primary': '#30C8A8',
       'dark': '#1B2628',

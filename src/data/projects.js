@@ -21,7 +21,7 @@ const projects = [
 
         id: 1,
         title: "Screen Manager",
-        description: "Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informação sobre Displays de celulares.",
+        description: "Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informação sobre Displays de celulares Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informação ",
         img: screenmanager,
         url: {
             linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7096593063929667584/',

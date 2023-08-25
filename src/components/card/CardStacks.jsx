@@ -5,15 +5,15 @@ import {SiStyledcomponents, SiVite, SiElectron, SiExpress} from 'react-icons/si'
 export function CardStacks({listFrontEnd, listBackEnd}){
     return(
         
-            <div className = 'w-full'>
-                <div className = 'flex items-center justify-around mt-3'>
+            <div className = 'w-full '>
+                <div className = 'flex items-center justify-around mt-5'>
 
                    <div>
                         <h5 className = 'text-sm text-[#D4D4D4]'>Front-end</h5>
                         <div className = 'flex flex-start gap-2 flex-nowrap overflow-x-auto w-full'>
                             {listFrontEnd.map( item => {
                                 return(
-                                    <div className= 'text-4xl'>
+                                    <div className= 'text-3xl'>
                                         {item == 'react' && <DiReact />}
                                         {item == 'electron' && <SiElectron />}
                                         {item == 'vite' && <SiVite />}
@@ -31,7 +31,7 @@ export function CardStacks({listFrontEnd, listBackEnd}){
                         <div className = 'flex flex-start gap-2 flex-nowrap overflow-x-auto w-full'>
                             {listBackEnd.map( item => {
                                 return(
-                                    <div className = 'text-4xl'>
+                                    <div className = 'text-3xl'>
                                         {item == 'node' && <DiNodejsSmall />}
                                         {item == 'mongodb' && <BiLogoMongodb />}
                                         {item == 'express' && <SiExpress />}

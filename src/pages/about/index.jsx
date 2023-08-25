@@ -48,7 +48,7 @@ export default function AboutMe(){
                     </div>
                 </div>
 
-                <div className = 'p-6 w-1/2 bg-dark rounded-md'>
+                <div className = 'p-6 w-1/2 bg-backgroundhover rounded-md'>
                     <div className = 'flex flex-col justify-around h-full gap-2'>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident aut debitis,
                             sit nemo odio dolorum numquam dignissimos ab dicta
