@@ -5,7 +5,10 @@ import TextArea from '../../components/textarea';
 
 export default function Contact(){
     return(
-        <Section title= 'Vamos trabalhar juntos'>
+        <Section 
+            title= 'Vamos trabalhar juntos'
+            id = 'contact'
+        >
             <div className="w-full">
                 <Form
                     submit={() => {}}
@@ -28,7 +31,7 @@ export default function Contact(){
                         />
                     </Input.Root>
 
-                    <TextArea />
+                    <TextArea title = 'Escreva uma mensagem'/>
                 </Form>
             </div>
         </Section>

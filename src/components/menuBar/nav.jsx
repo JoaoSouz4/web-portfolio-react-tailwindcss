@@ -1,9 +1,13 @@
+import {Link} from 'react-router-dom'
+
 export default function Nav(){
     return(
         <nav> 
             <ul className = 'flex gap-4'>
-                <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
-                    Home
+                <li 
+                    className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'
+                >
+                    
                 </li>
 
                 <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>

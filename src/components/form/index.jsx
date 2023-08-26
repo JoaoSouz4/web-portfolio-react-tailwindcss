@@ -3,7 +3,7 @@ import Button from '../button'
 export default function Form({children, submit, nameButton}){
     return(
         <form
-            className = 'flex flex-col gap-5 w-[400px] h-full'
+            className = 'flex flex-col gap-5 w-[500px] h-full'
             onSubmit={submit}
         >
             
