@@ -14,17 +14,17 @@ export default function Apresentation(){
                     <img
                         src={logo}
                         alt="João Souza logo"
-                        className = 'w-[75%] object-contain flex justify-center'
+                        className = 'w-[50%] object-contain flex justify-center lg:w-[70%]'
                     />
                 </div>
                 
                 <div className = 'w-full'>
                     <div className = 'w-full flex flex-col gap-4'>
-                        <h1 className = ' text-primary font-bold text-4xl text-center md:text-start'>Olá, Bem Vindo!</h1>
-                        <p className = 'text-[1.2rem] text-center md:text-start'>
+                        <h1 className = ' text-primary font-bold text-2xl text-center md:text-start lg:text-6xl'>Olá, Bem Vindo!</h1>
+                        <p className = 'text-lg text-center md:text-start lg:text-xl'>
                             <Balancer>
                                 Conheça meu trabalho como desenvolvedor web, acompanhe meus últimos projetos através
-                                deste web App desenvolvido por mim para ser o meu portfólio
+                                deste web App desenvolvido por mim para ser o meu <strong>portfólio</strong>
                             </Balancer>
                         </p>
                     </div>

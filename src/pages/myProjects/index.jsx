@@ -2,6 +2,7 @@ import Card from "../../components/card";
 import Section from "../../components/section";
 import projects from "../../data/projects";
 import {AiFillFire} from 'react-icons/ai';
+import Slider from '../../components/slider';
 
 export default function MyProjects(){
     return(
@@ -9,8 +10,9 @@ export default function MyProjects(){
             title = 'Meus Projetos'
             icon = {AiFillFire}
         >
-            {/* <div className = 'flex gap-4 relative'>
-                {
+                
+                    <Slider.Root>
+                    {
                     projects.map( project => {
                         return (
                             <Card.Root key = {project.id}>
@@ -41,9 +43,11 @@ export default function MyProjects(){
                                 </Card.Actions>
                             </Card.Root>
                         )
-                    })
-                }
-            </div> */}
-        </Section>
+                    })}
+                    </Slider.Root>
+                    
+                
+                </Section>
     )
+    
 }

@@ -3,7 +3,7 @@ import {AiFillInstagram, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 
 export default function Footer(){
     return (
-        <footer className = 'bg-dark w-full p-6'>
+        <footer className = 'bg-dark w-full p-6 mt-20'>
             <div className = 'flex flex-col gap-4 justify-center items-center my-5'>
                 <div className = 'w-32'>
                     <img src= {logo} alt="" />

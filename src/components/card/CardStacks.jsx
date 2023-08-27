@@ -6,7 +6,7 @@ export function CardStacks({listFrontEnd, listBackEnd}){
     return(
         
             <div className = 'w-full '>
-                <div className = 'flex items-center justify-around mt-5'>
+                <div className = 'flex items-center justify-around mt-5 gap-4'>
 
                    <div>
                         <h5 className = 'text-sm text-[#D4D4D4]'>Front-end</h5>
