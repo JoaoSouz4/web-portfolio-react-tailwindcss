@@ -15,10 +15,6 @@ export default function Nav(){
                 </li>
 
                 <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
-                    Stacks
-                </li>
-
-                <li className = 'text-[#aaaaaa] hover:text-primary hover:duration-300 hover:ease cursor-pointer'>
                     Projetos
                 </li>
 

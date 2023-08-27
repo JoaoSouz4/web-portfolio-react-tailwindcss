@@ -30,7 +30,7 @@ export default function MyProjects(){
                                     />
                                     { project.url.app ? 
                                         <Card.Action
-                                            label = 'Acesse'
+                                            label = 'Ver App'
                                             action = {() => window.open(project.url.app)}
                                         />
                                     :

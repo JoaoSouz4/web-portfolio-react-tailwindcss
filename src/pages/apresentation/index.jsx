@@ -6,14 +6,14 @@ import logo from '../../assets/logo.png';
 export default function Apresentation(){
     return(
         <Section>
+
             <div className = 'flex justify-between'>
                 <div className = 'max-w-[50%]'>
                     <div className = 'flex flex-col gap-2'>
                         <h1 className = ' text-primary font-bold text-4xl'>Bem Vindo!</h1>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic optio aliquid expedita, tempora,
-                            dolorum quas deserunt vero unde odit reprehenderit architecto? Ipsam minus obcaecati provident,
-                            sit officia facere numquam deleniti!
+                        <p className = 'text-[1.2rem]'>
+                            Conheça meu trabalho como desenvolvedor web, acompanhe meus últimos projetos através 
+                            deste web App desenvolvido por mim para ser o meu portfólio
                         </p>
                     </div>
                     <div className = 'flex gap-5 mt-4'>
