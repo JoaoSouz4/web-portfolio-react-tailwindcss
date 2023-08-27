@@ -2,12 +2,12 @@ import Section from "../../components/section";
 import fotosocial from '../../assets/fotosocial.jpg';
 import {HiAcademicCap} from 'react-icons/hi';
 import {FaBirthdayCake} from 'react-icons/fa';
-import {MdDeveloperMode} from 'react-icons/md';
+import {MdDeveloperMode, MdLocationOn} from 'react-icons/md';
 
 export default function AboutMe(){
     return(
         <Section title = 'Sobre mim'>
-            <div className = 'flex justify-center  p-4 rounded-2xl w-full'>
+            {/* <div className = 'flex justify-center  p-4 rounded-2xl w-full'>
                 <div className = ' w-[50%]'>
                     <div className = 'flex items-center gap-2'>
 
@@ -28,7 +28,7 @@ export default function AboutMe(){
                                 </div>
                             </div>
 
-                            <div className = 'flex flex-col gap-2'>
+                            <div className = 'flex flex-col gap-3'>
                                 <label className = 'flex gap-1 items-center'>
                                     <HiAcademicCap className = 'text-xl'/>
                                     <div className = 'relative'>
@@ -42,6 +42,11 @@ export default function AboutMe(){
                                 <label className = 'flex gap-1 items-center'>
                                     <FaBirthdayCake className = 'text-xl'/>
                                     31/10/2002 (20 anos)
+                                </label>
+
+                                <label className = 'flex gap-1 items-center'>
+                                    <MdLocationOn className = 'text-xl'/>
+                                    PortoVelho (RO) | Brasil
                                 </label>
                             </div>
                         </div>
@@ -60,7 +65,7 @@ export default function AboutMe(){
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </Section>
     )
 }

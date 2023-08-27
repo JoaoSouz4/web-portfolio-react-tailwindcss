@@ -1,5 +1,4 @@
 import Card from "../../components/card";
-import { CardTitle } from "../../components/card/CardTitle";
 import Section from "../../components/section";
 import projects from "../../data/projects";
 import {AiFillFire} from 'react-icons/ai';
@@ -10,7 +9,7 @@ export default function MyProjects(){
             title = 'Meus Projetos'
             icon = {AiFillFire}
         >
-            <div className = 'flex gap-4 relative'>
+            {/* <div className = 'flex gap-4 relative'>
                 {
                     projects.map( project => {
                         return (
@@ -44,7 +43,7 @@ export default function MyProjects(){
                         )
                     })
                 }
-            </div>
+            </div> */}
         </Section>
     )
 }

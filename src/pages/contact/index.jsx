@@ -1,3 +1,4 @@
+
 import Form from '../../components/form';
 import Input from '../../components/input';
 import Section from '../../components/section';
@@ -11,8 +12,7 @@ export default function Contact(){
             title= 'Vamos trabalhar juntos'
             icon = {IoIosRocket}
         >
-
-            <div className='flex justify-around items-center w-[100%] h-full mt-5' >
+            {/* <div className='flex justify-around items-center w-[100%] h-full mt-5' >
 
                 <div className = 'w-1/2 flex justify-center'>
                     <div className = ' shadow-[-30px_20px_1px_1px_#070E10] w-[80%] border rounded-lg border-ligth p-6 px-8 flex justify-around flex-col gap-2'>
@@ -50,7 +50,7 @@ export default function Contact(){
                     <TextArea title = 'Escreva uma mensagem'/>
                 </Form>
                
-            </div>
+            </div> */}
         </Section>
     )
 }

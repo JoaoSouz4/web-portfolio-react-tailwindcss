@@ -5,7 +5,7 @@ import MyProjects from "../../pages/myProjects";
 
 export default function Main(){
     return(
-        <main className = 'max-w-[1200px]'>
+        <main className = 'max-w-[1200px] px-4'>
             <Apresentation />
             <AboutMe />
             <MyProjects />
