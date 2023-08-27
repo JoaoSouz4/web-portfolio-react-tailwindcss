@@ -3,7 +3,7 @@ import Button from '../button'
 export default function Form({children, submit, nameButton}){
     return(
         <form
-            className = 'flex flex-col gap-5 w-[500px] h-full'
+            className = 'flex flex-col gap-5 w-full h-full'
             onSubmit={submit}
         >
             
@@ -15,6 +15,7 @@ export default function Form({children, submit, nameButton}){
                 <Button.Label 
                     label={nameButton}
                     isBold={true}
+
                 />
             </Button.Root>
         </form>
