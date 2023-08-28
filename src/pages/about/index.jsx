@@ -7,18 +7,18 @@ import {MdDeveloperMode, MdLocationOn} from 'react-icons/md';
 export default function AboutMe(){
     return(
         <Section>
-            <div className = 'flex flex-col justify-center gap-8 w-full h-full md:flex-row md:items-center'>
+            <div className = 'flex flex-col justify-center gap-8 w-full h-full md:flex-row md:items-center lg:gap-1'>
                 <div className = ' w-full'>
-                    <div className = 'flex flex-col gap-8 justify-center items-start'>
+                    <div className = 'flex flex-col gap-8 justify-center items-start lg:flex-row lg:items-center'> 
 
-                        <div className = 'flex gap-2  md:flex-row'>
+                        <div className = 'flex gap-2  md:flex-row lg:w-56 lg:h-56 lg:items-center'>
                             <img
-                                className = 'w-20 h-20 object-cover rounded-full'
+                                className = 'w-20 h-20 object-cover rounded-full lg:w-40 lg:h-40'
                                 src= {fotosocial} 
                                 alt="" 
                             />
 
-                            <div className = 'flex flex-col justify-between'>
+                            <div className = 'flex flex-col justify-between lg:hidden'>
                                 <label className = 'text-primary text-lg font-bold sm:text-2xl md:text-2xl'> João Vitor da Cunha Souza</label>
                                 <div className = 'flex items-center gap-2 '>
                                     <MdDeveloperMode />
@@ -28,6 +28,15 @@ export default function AboutMe(){
                         </div>
 
                         <div className = 'flex flex-col items-start w-full gap-3 sm:gap-4 sm:items-start'>
+
+                            <div className = ' hidden lg:flex flex-col justify-between'>
+                                <label className = 'text-primary text-lg font-bold sm:text-2xl md:text-2xl'> João Vitor da Cunha Souza</label>
+                                <div className = 'flex items-center gap-2 '>
+                                    <MdDeveloperMode />
+                                    <label className = 'text-md text-center text-gray-dark sm:text-xl md:text: 2xl'>Web Developer</label>
+                                </div>
+                            </div>
+
                             <label className = 'flex items-center gap-1'>
                                 <HiAcademicCap className = 'text-xl sm:text-2xl'/>
                                 <div className = 'relative'>
@@ -52,7 +61,7 @@ export default function AboutMe(){
                     </div>
                 </div>
 
-                <div className = 'p-6 w-full bg-backgroundhover rounded-md'>
+                <div className = 'p-6 w-full bg-backgroundhover rounded-md lg:w-[60%]'>
                     <div className = 'flex flex-col items-center justify-around h-full gap-2 overflow-y-auto'>
                         <p className = 'md:text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident aut debitis,
                             sit nemo odio dolorum numquam dignissimos ab dicta
