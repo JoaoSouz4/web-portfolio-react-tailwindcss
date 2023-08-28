@@ -20,9 +20,9 @@ export default function Contact(){
                     
                             <MdNotes className = 'text-md md:text-2xl'/>
                     
-                            <Balance>
-                                <p className = 'text-sm md:text-lg'>Estou em busca do meu primeiro emprego como desenvolvedor de software, remoto ou presencial</p>
-                            </Balance>
+                     
+                            <p className = 'text-sm md:text-lg'>Estou em busca do meu primeiro emprego como desenvolvedor de software, remoto ou presencial</p>
+                          
                             <p className = 'text-sm md:text-lg'>Estou aberto para <strong>freelances</strong> ou <strong>trabalhos voluntários</strong> </p>
                             <p className = 'text-sm md:text-lg'>Caso esteja interessando, Mande uma mensagem através deste formulário, será um prazer trocar uma idéia</p>
                         </div>

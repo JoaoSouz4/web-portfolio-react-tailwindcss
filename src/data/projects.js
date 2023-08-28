@@ -32,7 +32,8 @@ const projects = [
             frontEnd: ['react', 'vite', 'electron', 'tailwind'],
             backEnd: ['node', 'express', 'mongodb'],
         }
-    }
+    },
+    
 
 ]
 

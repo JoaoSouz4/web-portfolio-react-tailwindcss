@@ -6,9 +6,9 @@ export function CardStacks({listFrontEnd, listBackEnd}){
     return(
         
             <div className = 'w-full '>
-                <div className = 'flex items-center justify-around mt-5 gap-4'>
+                <div className = 'flex flex-col items-start justify-around gap-6 sm:flex-row'>
 
-                   <div>
+                   <div className = 'flex flex-col gap-1'>
                         <h5 className = 'text-sm text-[#D4D4D4]'>Front-end</h5>
                         <div className = 'flex flex-start gap-2 flex-nowrap overflow-x-auto w-full'>
                             {listFrontEnd.map( item => {
@@ -26,7 +26,7 @@ export function CardStacks({listFrontEnd, listBackEnd}){
                         </div>
                    </div>
 
-                   <div>
+                   <div className = 'flex flex-col gap-1'>
                         <h5 className = 'text-sm text-[#D4D4D4]'>Back-end</h5>
                         <div className = 'flex flex-start gap-2 flex-nowrap overflow-x-auto w-full'>
                             {listBackEnd.map( item => {
