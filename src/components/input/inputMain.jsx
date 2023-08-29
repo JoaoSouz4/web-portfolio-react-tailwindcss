@@ -1,6 +1,7 @@
-export default function InputMain({placeholder, isChange, type}){
+export default function InputMain({placeholder, isChange, type, value}){
     return(
         <input 
+            value = {value}
             type= {type}
             onChange={isChange}
             placeholder= {placeholder}

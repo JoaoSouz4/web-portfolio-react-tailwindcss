@@ -5,21 +5,29 @@ import Section from '../../components/section';
 import TextArea from '../../components/textarea';
 import { IoIosRocket } from 'react-icons/io';
 import {MdNotes} from 'react-icons/md';
-import Balance from 'react-wrap-balancer'
+
+import { useContext } from 'react';
+import {FormContext} from '../../context/FormContext';
+import sendEmail from '../../services/emailjs';
+import { modalContext } from '../../context/ModalContext';
+
 export default function Contact(){
+
+    const {formStates, buildActions: actions} = useContext(FormContext);
+    const {modalStates, actions:modalAction} = useContext(modalContext);
+
     return(
         <Section 
             title= 'Vamos trabalhar juntos'
             icon = {IoIosRocket}
         >
+            
             <div className='w-full h-full'>
 
                 <div className = 'flex flex-col gap-3 mt-6 mb-6 md:flex-row md:items-center md:gap-10'>
                     <div className = 'w-full'>
                         <div className = 'shadow-[-20px_20px_1px_1px_#070E10] w-[80%] border rounded-lg border-ligth p-6 px-4 flex w-full justify-around flex-col gap-2'>
-                    
                             <MdNotes className = 'text-md md:text-2xl'/>
-                    
                      
                             <p className = 'text-sm md:text-lg'>Estou em busca do meu primeiro emprego como desenvolvedor de software, remoto ou presencial</p>
                           
@@ -28,26 +36,47 @@ export default function Contact(){
                         </div>
                     </div>
                     <Form
-                        submit={() => {}}
+                        submit={ async(e) => {
+                            actions.setRequestStatus(true)
+                            const res = await sendEmail(e,formStates);
+                            actions.setRequestStatus(false)
+                            if(res.status == 200) {
+                                modalAction.setTitle('Obrigado pela iniciativa!')
+                                modalAction.setDesc('Fico feliz pelo seu interesse. Muito em breve irei retornar uma mensagem através do email enviado')
+                                return modalAction.openModal()
+                            }
+                            else {
+                                modalAction.setTitle('Obrigado pela iniciativa!')
+                                modalAction.setDesc('Fico feliz pelo seu interesse. Muito em breve irei retornar uma mensagem através do email enviado')
+                                return modalAction.openModal()
+                            }
+                            
+                        }}
                         nameButton={'Enviar'}
                     >
                         <Input.Root>
                             <Input.Label label = {'Seu Nome'}/>
                             <Input.Main
-                                placeholder={'Insira seu melhor email'}
-                                isChange={() => {}}
-                                type={'email'}
+                                value={formStates.name}
+                                placeholder={'nome'}
+                                isChange={(e) => actions.setName(e.target.value)}
+
                             />
                         </Input.Root>
                         <Input.Root>
                             <Input.Label label = {'Insira seu melhor email'}/>
                             <Input.Main
-                                placeholder={'Insira o seu nome'}
-                                isChange={() => {}}
+                                value = {formStates.email}
+                                placeholder={'email'}
+                                isChange={(e) => actions.setEmail(e.target.value)}
                                 type={'text'}
                             />
                         </Input.Root>
-                        <TextArea title = 'Escreva uma mensagem'/>
+                        <TextArea
+                            value = {formStates.message}
+                            isChange={(e) => actions.setMessage(e.target.value)}
+                            title = 'Escreva uma mensagem'
+                        />
                     </Form>
                 </div>
                

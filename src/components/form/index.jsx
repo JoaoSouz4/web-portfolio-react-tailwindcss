@@ -1,6 +1,11 @@
+import { useContext } from 'react'
 import Button from '../button'
+import { FormContext } from '../../context/FormContext';
+import { Spinner } from 'reactstrap';
 
 export default function Form({children, submit, nameButton}){
+
+    const {formStates} = useContext(FormContext);
     return(
         <form
             className = 'flex flex-col gap-5 w-full h-full'
@@ -12,11 +17,18 @@ export default function Form({children, submit, nameButton}){
             </div>
 
             <Button.Root >
-                <Button.Label 
-                    label={nameButton}
-                    isBold={true}
-
-                />
+                {!formStates.isFetching ? 
+                    <Button.Label 
+                        label={nameButton}
+                        isBold={true}
+                    />
+                : 
+                    <div className = 'w-full flex justify-center items-center'>
+                        <div className = 'w-[1.5rem] h-[1.5rem] rounded-full border border-2 border-t-transparent animate-spin light flex items-center justify-center'>
+                        </div>
+                    </div>
+                }
+                
             </Button.Root>
         </form>
     )

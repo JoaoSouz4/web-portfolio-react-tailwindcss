@@ -7,12 +7,18 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import { ModalProvider } from './context/ModalContext.jsx';
+
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (<App />),
+    element: (
+      <ModalProvider>
+        <App />
+      </ModalProvider>
+    ),
   },
   
 ]);

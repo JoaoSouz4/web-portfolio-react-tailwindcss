@@ -13,7 +13,7 @@ export function CardStacks({listFrontEnd, listBackEnd}){
                         <div className = 'flex flex-start gap-2 flex-nowrap overflow-x-auto w-full'>
                             {listFrontEnd.map( item => {
                                 return(
-                                    <div className= 'text-3xl'>
+                                    <div key = {item} className= 'text-3xl'>
                                         {item == 'react' && <DiReact />}
                                         {item == 'electron' && <SiElectron />}
                                         {item == 'vite' && <SiVite />}
@@ -31,7 +31,7 @@ export function CardStacks({listFrontEnd, listBackEnd}){
                         <div className = 'flex flex-start gap-2 flex-nowrap overflow-x-auto w-full'>
                             {listBackEnd.map( item => {
                                 return(
-                                    <div className = 'text-3xl'>
+                                    <div key = {item} className = 'text-3xl'>
                                         {item == 'node' && <DiNodejsSmall />}
                                         {item == 'mongodb' && <BiLogoMongodb />}
                                         {item == 'express' && <SiExpress />}

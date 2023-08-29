@@ -3,7 +3,7 @@ import screenmanager from '../assets/projects/screen-manager.png';
 
 const projects = [
     {
-        id: "1",
+        id: 0,
         title: "Repositório criativo",
         description: "Web App desenvolvido para ser meu portfólio para divulgar minhas ilustrações. Usuários uma vez cadastrados e autenticados podem curtir e comentar posts",
         img: repositoriocriativo,
