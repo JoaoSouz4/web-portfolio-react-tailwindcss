@@ -7,12 +7,12 @@ export function Close(){
     const {actions} = useContext(modalContext);
 
     return(
-        <div className = 'flex justify-end'>
+        <div className = 'flex justify-end mt-[1rem]'>
             <Button.Root 
                 style = 'leaked'
                 action={() => actions.closeModal()}
             >
-                <Button.Label label = 'fechar' />
+                <Button.Label color = 'primary' label = 'fechar' />
              </Button.Root>
         </div>
     )

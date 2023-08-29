@@ -31,10 +31,10 @@ export default function Apresentation(){
 
                     <div className = 'flex gap-5 mt-4 justify-center w-full md:justify-start'>
                         <Button.Root>
-                            <Button.Label label = 'Baixar CV' isBold = {true}/>
+                            <Button.Label color = 'light' label = 'Baixar CV' isBold = {true}/>
                         </Button.Root>
                         <Button.Root style = 'leaked'>
-                            <Button.Label label = 'Git Hub' />
+                            <Button.Label color = 'primary' label = 'Git Hub' />
                         </Button.Root>
                     </div>
                 </div>

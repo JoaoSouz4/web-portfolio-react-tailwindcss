@@ -41,13 +41,11 @@ export default function Contact(){
                             const res = await sendEmail(e,formStates);
                             actions.setRequestStatus(false)
                             if(res.status == 200) {
-                                modalAction.setTitle('Obrigado pela iniciativa!')
-                                modalAction.setDesc('Fico feliz pelo seu interesse. Muito em breve irei retornar uma mensagem através do email enviado')
-                                return modalAction.openModal()
+                                console.log(res)
+                                return modalAction.openModal('Obrigado pela iniciativa!', 'Fico contente pelo o seu interresse. Muito em breve irei lhe retornar com uma mensagem através do email informado')
                             }
                             else {
-                                modalAction.setTitle('Obrigado pela iniciativa!')
-                                modalAction.setDesc('Fico feliz pelo seu interesse. Muito em breve irei retornar uma mensagem através do email enviado')
+                                console.log(res)
                                 return modalAction.openModal()
                             }
                             

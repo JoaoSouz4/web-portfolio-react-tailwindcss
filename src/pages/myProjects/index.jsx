@@ -26,11 +26,13 @@ export default function MyProjects(){
                                 <Card.Actions>
                                     <Card.Action
                                         style = 'leaked'
+                                        color = 'primary'
                                         label = 'GitHub'
                                         action = {() => window.open(project.url.gitHub, '_blank')}
                                     />
                                     { project.url.app ? 
                                         <Card.Action
+                                            
                                             label = 'Ver App'
                                             action = {() => window.open(project.url.app)}
                                         />

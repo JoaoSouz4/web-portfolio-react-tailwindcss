@@ -11,7 +11,7 @@ export function ModalProvider({children}){
     });
 
     const actions = {
-        openModal: () => setModalStates({...modalStates, isOpen: true}),
+        openModal: (title, desc) => setModalStates({...modalStates, isOpen: true, title:title, desc: desc}),
         closeModal: () => setModalStates({...modalStates, isOpen: false}),
         setTitle: (value) => setModalStates({...modalStates, title: value}),
         setDesc: (value) => setModalStates({...modalStates, desc: value}),
