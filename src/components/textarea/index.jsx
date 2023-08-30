@@ -6,7 +6,7 @@ export default function TextArea({title, value, isChange}){
                 value = {value}
                 onChange = {isChange}
                 maxLength={500}
-                className = 'bg-light px-3 py-6 rounded-lg text-gray-dark resize-none'
+                className = 'bg-light px-3 py-6 rounded-lg text-dark resize-none'
             />
         </div>
     )

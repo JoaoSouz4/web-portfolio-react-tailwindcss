@@ -23,18 +23,20 @@ function validationForm(object){
     const {name, email, message} = object;
 
     if(name == '' || name == undefined || name == null ) {
-        return { status: false, message: 'Nome inválido'}
+        return { status: false, message: 'Insira o seu nome, por favor'}
     } 
 
     
     if(email == '' || email == undefined || email == null ) {
-        return { status: false, message: 'email inválido'}
+        return { status: false, message: 'Certifique-se de informar o seu email'}
     } 
 
     
     if(message == '' || message == undefined || message == null ) {
         return { status: false, message: 'Lembre-se de escrever a mensagem'}
-    } 
+    }
+
+    
 return true
 }
 
