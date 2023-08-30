@@ -11,11 +11,13 @@ import {FormContext} from '../../context/FormContext';
 import sendEmail from '../../services/emailjs';
 import { modalContext } from '../../context/ModalContext';
 import Title from '../../components/title';
+import {AlertContext} from '../../context/AlertContext';
 
 export default function Contact(){
 
     const {formStates, buildActions: actions} = useContext(FormContext);
     const {modalStates, actions:modalAction} = useContext(modalContext);
+    const {alertState, buildActions: alertAction} = useContext(AlertContext);
 
     return(
         <Section 
@@ -45,12 +47,12 @@ export default function Contact(){
                             const res = await sendEmail(e,formStates);
                             actions.setRequestStatus(false)
                             if(res.status == 200) {
-                                console.log(res)
+                                
                                 return modalAction.openModal('Obrigado pela iniciativa!', `${formStates.name}, Fico contente pelo o seu interresse. Muito em breve irei lhe retornar com uma mensagem através do email informado :)`)
                             }
                             else {
-                                console.log(res)
-                                return modalAction.openModal()
+                                
+                                return alertAction.openAlert('warning', res.message)
                             }
                             
                         }}

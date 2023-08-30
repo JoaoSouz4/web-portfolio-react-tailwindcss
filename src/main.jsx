@@ -8,6 +8,7 @@ import {
   Link,
 } from "react-router-dom";
 import { ModalProvider } from './context/ModalContext.jsx';
+import { AlertProvider } from './context/AlertContext.jsx';
 
 import './index.css'
 
@@ -16,7 +17,9 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <ModalProvider>
-        <App />
+        <AlertProvider>
+          <App />
+        </AlertProvider>
       </ModalProvider>
     ),
   },

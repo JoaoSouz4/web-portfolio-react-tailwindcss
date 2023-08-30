@@ -20,7 +20,7 @@ export function AlertProvider ({children}) {
     }
 
     return(
-       <AlertContext.Provider value = {{alertState,buildActions}}>
+       <AlertContext.Provider value = {{alertState, buildActions}}>
             {children}
        </AlertContext.Provider>
     )
