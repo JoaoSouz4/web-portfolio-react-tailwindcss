@@ -42,7 +42,7 @@ export default function Contact(){
                             actions.setRequestStatus(false)
                             if(res.status == 200) {
                                 console.log(res)
-                                return modalAction.openModal('Obrigado pela iniciativa!', 'Fico contente pelo o seu interresse. Muito em breve irei lhe retornar com uma mensagem através do email informado')
+                                return modalAction.openModal('Obrigado pela iniciativa!', `${formStates.name}, Fico contente pelo o seu interresse. Muito em breve irei lhe retornar com uma mensagem através do email informado :)`)
                             }
                             else {
                                 console.log(res)

@@ -2,9 +2,11 @@ import emailJs from '@emailjs/browser';
 
 async function sendEmail(e, object){
     e.preventDefault();
+    console.log('clicou')
     const validation = validationForm(object);
-    if(validation.status ==false) return validation
     console.log(validation)
+    if(validation.status ==false) return validation
+    
 
     const {name, message, email} = object;
     const templateParms = {
