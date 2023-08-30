@@ -33,7 +33,7 @@ export default function Apresentation(){
                         <Button.Root>
                             <Button.Label color = 'light' label = 'Baixar CV' isBold = {true}/>
                         </Button.Root>
-                        <Button.Root style = 'leaked'>
+                        <Button.Root style = 'leaked' action = {() => window.open('https://github.com/JoaoSouz4', '_blank')}>
                             <Button.Label color = 'primary' label = 'Git Hub' />
                         </Button.Root>
                     </div>

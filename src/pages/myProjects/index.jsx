@@ -3,14 +3,15 @@ import Section from "../../components/section";
 import projects from "../../data/projects";
 import {AiFillFire} from 'react-icons/ai';
 import Slider from '../../components/slider';
-
+import Title from "../../components/title";
 export default function MyProjects(){
     return(
         
         <Section
-            title = 'Meus Projetos'
-            icon = {AiFillFire}
+           
         >
+
+            <Title text = 'Meus Projetos' icon = {AiFillFire}/>
             <Slider.Root>
                     {
                     projects.map( project => {

@@ -10,6 +10,7 @@ import { useContext } from 'react';
 import {FormContext} from '../../context/FormContext';
 import sendEmail from '../../services/emailjs';
 import { modalContext } from '../../context/ModalContext';
+import Title from '../../components/title';
 
 export default function Contact(){
 
@@ -18,11 +19,14 @@ export default function Contact(){
 
     return(
         <Section 
-            title= 'Vamos trabalhar juntos'
-            icon = {IoIosRocket}
+            
         >
             
-            <div className='w-full h-full'>
+            <div className='w-full h-full flex items-center flex-col justify-center'>
+                <Title 
+                    text = 'Vamos Trabalhar Juntos!'
+                    icon = {IoIosRocket}
+                />
 
                 <div className = 'flex flex-col gap-3 mt-6 mb-6 md:flex-row md:items-center md:gap-10'>
                     <div className = 'w-full'>

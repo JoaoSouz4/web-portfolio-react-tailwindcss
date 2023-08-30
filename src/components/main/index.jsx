@@ -25,11 +25,11 @@ export default function Main(){
                     <MyProjects />
                 </Element>
 
-                <FormProvider>
-                    <Element name = 'contact'>
+                <Element name = 'contact'>
+                    <FormProvider>
                         <Contact />
-                    </Element>
-                </FormProvider>
+                    </FormProvider>
+                </Element>
             </main>
         </>
     )
