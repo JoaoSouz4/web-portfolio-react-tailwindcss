@@ -20,7 +20,7 @@ export default function Apresentation(){
                 
                 <div className = 'w-full'>
                     <div className = 'w-full flex flex-col gap-4'>
-                        <h1 className = ' text-primary font-bold text-2xl text-center md:text-start lg:text-6xl'>Olá, Bem Vindo!</h1>
+                        <h1 className = ' text-primary font-bold text-3xl text-center md:text-3xl md:text-start lg:text-6xl'>Olá, Bem Vindo!</h1>
                         <p className = 'text-lg text-center md:text-start lg:text-xl'>
                             <Balancer>
                                 Conheça meu trabalho como desenvolvedor web, acompanhe meus últimos projetos através
