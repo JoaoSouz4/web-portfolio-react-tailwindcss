@@ -31,7 +31,7 @@ export default function Apresentation(){
 
                     <div className = 'flex gap-5 mt-4 justify-center w-full md:justify-start'>
                         <Button.Root>
-                            <Button.Label color = 'light' label = 'Baixar CV' isBold = {true}/>
+                            <a href="src/assets/documents/curriculo-joao-souza.pdf" download = 'currículo-joao-souza.pdf' target="_blank"><Button.Label color = 'light' label = 'Baixar CV' isBold = {true}/></a>
                         </Button.Root>
                         <Button.Root style = 'leaked' action = {() => window.open('https://github.com/JoaoSouz4', '_blank')}>
                             <Button.Label color = 'primary' label = 'Git Hub' />

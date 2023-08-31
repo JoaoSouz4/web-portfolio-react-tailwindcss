@@ -11,13 +11,19 @@ export default function Footer(){
 
                 <div className="flex justify-center">
                     <div className = 'flex gap-4  px-8'>
-                        <div className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
+                        <div 
+                            onClick = {() => {window.open('https://www.instagram.com/jhoonny.art/?next=%2F','_blank')}}
+                            className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
                             <AiFillInstagram className = 'text-2xl'/>
                         </div>
-                        <div className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
+                        <div
+                            onClick = {() => {window.open('https://www.linkedin.com/in/jo%C3%A3o-vitor-souza-508a30231/','_blank')}}
+                            className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
                             <AiFillLinkedin className = 'text-2xl'/>
                         </div>
-                        <div className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
+                        <div 
+                            onClick = {() => {window.open('https://github.com/JoaoSouz4','_blank')}}
+                            className = 'hover:bg-primary hover:ease-in-out hover:duration-500 rounded-full p-1'>
                             <AiFillGithub className = 'text-2xl'/>
                         </div>
                     </div>

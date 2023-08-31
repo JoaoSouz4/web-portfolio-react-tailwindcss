@@ -38,7 +38,7 @@ export default function Contact(){
                             <p className = 'text-sm md:text-lg'>Estou em busca do meu primeiro emprego como desenvolvedor de software, remoto ou presencial</p>
                           
                             <p className = 'text-sm md:text-lg'>Estou aberto para <strong>freelances</strong> ou <strong>trabalhos voluntários</strong> </p>
-                            <p className = 'text-sm md:text-lg'>Caso esteja interessando, Mande uma mensagem através deste formulário, será um prazer trocar uma idéia</p>
+                            <p className = 'text-sm md:text-lg'>Caso esteja interessando, mande uma mensagem através deste formulário, será um prazer trocar uma idéia</p>
                         </div>
                     </div>
                     <Form
@@ -47,7 +47,7 @@ export default function Contact(){
                             const res = await sendEmail(e,formStates);
                             actions.setRequestStatus(false)
                             if(res.status == 200) {
-                                
+                                actions.clear();
                                 return modalAction.openModal('Obrigado pela iniciativa!', `${formStates.name}, Fico contente pelo o seu interresse. Muito em breve irei lhe retornar com uma mensagem através do email informado :)`)
                             }
                             else {

@@ -15,7 +15,15 @@ export function FormProvider ({children}) {
         setName: (e) => setFormStates({...formStates, name: e}),
         setEmail: (e) => setFormStates({...formStates, email: e}),
         setMessage: (e) => setFormStates({...formStates, message: e}),
-        setRequestStatus: (value => setFormStates({...formStates, isFetching: value}))
+        setRequestStatus: (value => setFormStates({...formStates, isFetching: value})),
+        clear: () => {
+            setFormStates({
+                ...formStates,
+                name: '',
+                email: '',
+                message: '',
+            })
+        }
     }
 
     return (
