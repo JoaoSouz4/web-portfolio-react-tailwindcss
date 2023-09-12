@@ -18,10 +18,9 @@ const projects = [
         }
     },
     {
-
         id: 1,
         title: "Screen Manager",
-        description: "Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informação sobre Displays de celulares Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informação ",
+        description: "Aplicação desktop para uma assistência técnica em que trabalhei. Sua função é registrar e gerenciar informações sobre Displays de celulares, tornando o antendimento ao cliente mais objetivo e ágil.",
         img: screenmanager,
         url: {
             linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7096593063929667584/',
@@ -30,6 +29,21 @@ const projects = [
         },
         stacks: {
             frontEnd: ['react', 'vite', 'electron', 'tailwind'],
+            backEnd: ['node', 'express', 'mongodb'],
+        }
+    },
+
+    {
+        id: 2,
+        title: "Stock Alert",
+        description: "Construi este web app com tailwindCss em mobile first para ser um meio em comum dos funcionários da assistência técnica para registrarem produtos em falta da loja, se trata de um CRUD com sistema de autentição para que apenas os funcionários da loja possam realizar operações na aplicação ",
+        url: {
+            linkedin: '',
+            gitHub: 'https://github.com/JoaoSouz4/StockAlert_React_Tailwindcss',
+            app: 'https://stock-alert-react-tailwindcss.vercel.app/',
+        },
+        stacks: {
+            frontEnd: ['react', 'vite','tailwind'],
             backEnd: ['node', 'express', 'mongodb'],
         }
     },
