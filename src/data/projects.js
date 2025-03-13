@@ -18,7 +18,7 @@ const projects = [
     id: 1,
     title: 'Hero Path',
     description:
-      'Para colecionares de quadrinhos iniciantes que buscam as melhores histórias de super-heróis para ter na coleção',
+      'Para colecionares de quadrinhos iniciantes que buscam as melhores histórias de super-heróis para ter na coleção de forma rápida e direta',
     url: {
       linkedin:
         'https://www.linkedin.com/feed/update/urn:li:activity:7096593063929667584/',
