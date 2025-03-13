@@ -1,20 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Link,
-} from "react-router-dom";
+} from 'react-router-dom';
 import { ModalProvider } from './context/ModalContext.jsx';
 import { AlertProvider } from './context/AlertContext.jsx';
 
-import './index.css'
+import './index.css';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: (
       <ModalProvider>
         <AlertProvider>
@@ -23,9 +23,8 @@ const router = createBrowserRouter([
       </ModalProvider>
     ),
   },
-  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
-)
+);

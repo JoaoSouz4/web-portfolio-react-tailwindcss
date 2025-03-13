@@ -1,7 +1,7 @@
-import {ModalRoot} from './modalRoot';
+import { ModalRoot } from './modalRoot';
 
 const Modal = {
-    Root: ModalRoot,
-}
+  Root: ModalRoot,
+};
 
 export default Modal;
